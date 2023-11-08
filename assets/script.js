@@ -17,10 +17,11 @@ const slides = [
 	}
 ]
 
+//Etape 2 Ajouter des eventListener
+
 let listImgFleche =  document.querySelectorAll(".arrow img")
 	for (let i = 0; i < listImgFleche.length; i++){
 		let flecheActuelle = listImgFleche[i]
-		console.log(flecheActuelle)
 
 		flecheActuelle.addEventListener("click", (event) => {
 			maFleche = event.target
@@ -28,15 +29,23 @@ let listImgFleche =  document.querySelectorAll(".arrow img")
 		} )
 	}
 
-	let compteurImg = slides.length
+
+// Etape 3 ajouter des bullet point au slider
+
+let compteurImg = slides.length
 
 let index = 0
-	while (index < compteurImg - 1 ) {
+	while (index < compteurImg) {
 		let bulletPoint = document.createElement("div")
 		let bulletPointParent = document.querySelector(".dots")
 		bulletPointParent.appendChild(bulletPoint)
 		bulletPoint.classList.add("dot")
 		index++
-		console.log(index)
 	}
+
+//Etape 4 modifier le slide au clic sur le bouton
+
+
+
+
 
