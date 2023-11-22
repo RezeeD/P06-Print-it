@@ -50,7 +50,7 @@ let slideImg = document.querySelector(".banner-img");
 let slideMsg = document.querySelector("#banner p");
 
 slideArrow[1].addEventListener("click", () => {
-  console.log(indexSlide);
+
 
   indexSlide++;
 
@@ -69,7 +69,7 @@ slideArrow[1].addEventListener("click", () => {
 });
 
 slideArrow[0].addEventListener("click", () => {
-  console.log(indexSlide);
+
 
   indexSlide--;
 
